@@ -10,15 +10,13 @@
 Thumbs.db
 
 # wordpress specific
-#wp-config.php
 temp-write-test-*
 wp-content/uploads/
 wp-content/plugins/
+wp-content/languages/
 wp-content/mu-plugins/
 wp-content/revslider/
 wp-content/updraft/
-#wp-content/mu-plugins/
-
 wp-content/blogs.dir/
 wp-content/wp-rocket-config
 wp-content/upgrade/*
