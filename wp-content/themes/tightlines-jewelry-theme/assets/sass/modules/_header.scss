@@ -1,0 +1,120 @@
+.site-header {
+  background-color: $color__masthead_bg ; // !important;
+  padding-top: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  .banner-wide {
+    float: right;
+  }
+  .custom-logo-link {
+    img {
+      //width: 100%;
+      height: auto;
+    }
+    display:block;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px;
+  }
+
+  .site-title{
+    display:block;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .custom-logo-link {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .menu-toggle {
+    padding: 5px;
+  }
+
+}
+.site-content {
+  margin-top: 3rem;
+
+}
+.main-navigation {
+  background-color: $color__mainNav-background; // !important;
+  border-top: 0.1rem solid $color__border;
+}
+
+#translations-sidebar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: $screen-xs-max) { // 767
+  .site-header {
+    padding: 0;
+  }
+}
+.header-banner {
+  text-align: right;
+  @media screen and(max-width: $screen-xs-max) {
+    margin-top:15px;
+  }
+  .tyche-adsense {
+    width: 728px;
+    height: 90px;
+    display: block;
+  }
+  .tyche-adsense:before {
+    display: none !important;
+  }
+  .tyche-adsense ins {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: transparent;
+  }
+
+  @media screen and (max-width: $screen-sm-max) { //991
+    .tyche-adsense {
+      width: 720px;
+      height: 90px;
+    }
+    .tyche-adsense:before {
+      content: '991';
+    }
+    .pull-right {
+      float: none;
+    }
+  }
+
+  .adsense__loading {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .9);
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .adsense--loaded .adsense__loading {
+    display: none;
+  }
+
+  .adsense__loading span {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  }
+}
+
+.site-description {
+  margin-bottom: 0;
+}

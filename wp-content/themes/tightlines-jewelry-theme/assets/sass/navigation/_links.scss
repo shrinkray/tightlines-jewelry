@@ -1,0 +1,53 @@
+.page, .archive, .single {
+
+  a {
+    color: $color__link;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color__link-hover;
+    }
+    &:focus {
+      outline: thin dotted;
+    }
+    &:hover,
+    &:active {
+      outline: 0;
+    }
+  }
+
+
+
+  //#return-to-top,
+  .return {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+
+    transition: all 0.3s ease;
+  }
+  //#return-to-top i,
+  .return i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    transition: all 0.3s ease;
+  }
+  //#return-to-top:hover {
+  //  background: rgba(0, 0, 0, 0.9);
+  //}
+  //#return-to-top:hover i {
+  //  color: #fff;
+  //  top: 5px;
+  //}
+}

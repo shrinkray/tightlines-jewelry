@@ -1,0 +1,34 @@
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__brand-primary: #f67723 !default;
+$color__brand-primary-hover: darken($color__brand-primary, 10%);
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: $color__brand-primary;
+$color__link-visited: lighten($color__brand-primary, 10%);
+$color__link-hover: $color__brand-primary-hover;
+$color__text-main: #717171;
+$color__title: #2b3d7a;
+
+$color__mainNav-background: #2b3d7a;
+$color__header_bg: #39509C;
+$color__copyright_bg: #39509C;
+$color__masthead_bg: #1E2D5D;
+$color__footer_bg: #1E2D5D;
+$color__border: #898989;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+// cart
+$color__bg_incrementor: $color__brand-primary;

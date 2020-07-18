@@ -1,0 +1,234 @@
+.main-slider {
+  position: relative;
+  .owl-theme .owl-nav {
+    margin-top: 0;
+  }
+
+  .hero-caption {
+    position: absolute;
+    top: 30%;
+    span, a, i, p, h1, h2, h3, h4, h5, h6 {
+      color: #FFF;
+    }
+    &.left {
+      left: 20%;
+    }
+    &.center {
+      left: 50%;
+      @include transform(translateX(-50%));
+    }
+    &.right {
+      right: 20%;
+    }
+    .year {
+      font-size: 78px;
+      font-weight: $font__weight_heavy;
+    }
+    .caption {
+      font-size: 28px;
+      font-weight: $font__weight_heavy;
+      display: inline-block;
+      width: 166px;
+      line-height: 30px;
+      margin-left: 16px;
+    }
+    .btn-group {
+      a {
+        display: inline-block;
+        @extend .button;
+        color: #FFF;
+        padding: .5rem 1rem;
+        border-width: 2px;
+        border-color: $color__brand-primary;
+        font-weight: $font__weight_medium;
+        -webkit-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background: $color__brand-primary-hover;
+          border-color: $color__brand-primary-hover;
+          -webkit-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+        &:last-of-type {
+          border-color: #fff;
+          background: transparent;
+          margin-left: 15px;
+          &:hover {
+            color: #FFF;
+            background: $color__brand-primary;
+            border-color: $color__brand-primary;
+          }
+        }
+      }
+    }
+  }
+
+  .main-slider-previous, .main-slider-next {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    @include transform(translateY(-75%));
+    i {
+      color: #494a4d;
+      font-size: 110px;
+    }
+    &:hover {
+      i {
+        color: #FFF;
+      }
+    }
+  }
+  .main-slider-previous {
+    left: 10%;
+  }
+  .main-slider-next {
+    right: 10%;
+  }
+
+  .main-slider-bar {
+    background: $color__brand-primary;
+    color: #FFF;
+    span, a, i, p, h1, h2, h3, h4, h5, h6 {
+      color: #FFF;
+    }
+    .main-slider-info {
+      display: inline-block;
+      padding: 14px 0 14px;
+      margin-top: 5px;
+      width: 100%;
+      li {
+        .main-slider-info-cell {
+          display: flex;
+        }
+        @media(min-width: 768px) {
+          &:first-of-type {
+            border-right: 1px solid transparentize(#FFF, .7);
+          }
+          &:last-of-type {
+            border-left: 1px solid transparentize(#FFF, .7);
+          }
+        }
+        .cell-icon {
+          font-size: 37px;
+          line-height: 40px;
+          //float: left;
+
+
+          .dashicons {
+            width: initial;
+            height: initial;
+            font-size: 30px;
+            vertical-align: middle;
+          }
+        }
+        .cell-content {
+          float: left;
+          margin-left: 15px;
+        }
+        .cell-caption {
+          font-size: 18px;
+          line-height: 18px;
+          font-weight: $font__weight_heavy;
+          display: block;
+          position: relative;
+          white-space: normal;
+        }
+        .cell-subcaption {
+          font-size: 16px;
+          display: block;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 11/14/2019
+ * Added new top image for Renee. This needed custom styles. Not worth adding to the theme since this could all change again next quarter.
+ * **/
+.home .owl-stage {
+  overflow: hidden;
+  height: 58vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-slider .hero-caption {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  bottom: 30%;
+  padding: 0 2rem 2rem;
+  top: auto;
+}
+
+/*
+   Jumping through hoops to make the top section look better on media queries.
+  12-5-2019  */
+
+@media screen and  (max-width: 1600px ) {
+  .home .owl-stage {
+    height: 50vh;
+  }
+  .main-slider .hero-caption 	{
+    bottom: auto;
+    top: 30%;
+    padding: 0 2rem 2rem;
+  }
+}
+
+@media screen and  (max-width: 1450px ) {
+  .home .owl-stage {
+    height: 45vh;
+  }
+}
+@media screen and  (max-width: 1300px ) {
+  .home .owl-stage {
+    height: 40vh;
+  }
+  .main-slider .hero-caption {
+    display: block;
+  }
+
+  .main-slider .hero-caption.left {
+    left: 0;
+  }
+}
+@media screen and  (max-width: 1100px ) {
+  .home .owl-stage {
+    height: 30vh;
+  }
+}
+
+@media screen and  (max-width: 1000px ) {
+  .home .owl-stage {
+    align-items: flex-start;
+    height: 100%;
+  }
+}
+
+@media screen and  (max-width: 900px ) {
+  .main-slider .hero-caption {
+
+    .year {
+      font-size: 6rem;
+
+    }
+  }
+}
+
+@media screen and  (max-width: 600px ) {
+  .main-slider .hero-caption {
+    background-color: transparent;
+    border: none;
+    .year {
+      font-size: 4rem;
+
+    }
+  }
+}
+
+

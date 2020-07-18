@@ -1,0 +1,46 @@
+
+// Fixes minor conflicts in styling of other content
+
+.widget .soliloquy-slider {
+  li {
+    &::before {
+      display: none;
+    }
+  }
+}
+.timely {
+  // Fixes All In One Events plugin background
+  .ai1ec-agenda-widget-view,
+  .ai1ec-agenda-view {
+    .ai1ec-date {
+      background: transparent;
+    }
+    .ai1ec-date-title {
+      border-radius: 0;
+    }
+    .ai1ec-month {
+      border-radius: 0;
+      background: $color__brand-primary;
+      &:hover {
+        transition: all 2s ease-in-out;
+        background: darken($color__brand-primary, 10%);
+      }
+    }
+  }
+  .ai1ec-date-title {
+    .ai1ec-load-view {
+      border-radius: 0;
+    }
+  }
+  .ai1ec-btn-primary {
+    background-color: $color__brand-primary;
+    border-color: $color__brand-primary;
+    &:hover {
+      background-color: darken($color__brand-primary, 10%);
+      border-color: darken($color__brand-primary, 10%);
+    }
+  }
+}
+.widget_prisna-google-website-translator {
+  margin: 1rem 0;
+}

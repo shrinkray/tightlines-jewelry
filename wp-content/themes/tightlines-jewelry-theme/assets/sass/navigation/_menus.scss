@@ -1,0 +1,137 @@
+
+#mega-menu-wrap-primary {
+  #mega-menu-primary {
+    .mega-menu-item-has-children {
+      .mega-menu-link {// shop by species
+
+      }
+      .mega-sub-menu {
+        .mega-menu-row {
+          .mega-sub-menu {
+            .mega-menu-column {
+              .mega-sub-menu {
+                .mega-menu-item-has-children {
+                  //background-color: crimson;
+                  .mega-menu-link { // Freshwater Fish
+
+                  }
+                  .mega-sub-menu {
+                    margin-left: 1rem;
+                    .mega-menu-item-has-children {
+
+
+                      .mega-menu-link { // Char Family
+
+                      }
+                      .mega-sub-menu {
+                        margin-left: 2rem;
+
+
+                        .mega-menu-item {
+                          .mega-menu-link { // Arctic Char
+
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+$color__mega-menu_bg: rgb(56, 80, 155);
+
+.mega-menu-toggle {
+  background-color: $color__mega-menu_bg;
+
+}
+.mega-menu-wrap {
+  .mega-menu-link {
+
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  .mega-menu-wrap {
+    padding: 0 15px;
+    .mega-menu-column {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) { // 767
+
+  #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row > ul.mega-sub-menu > li.mega-menu-columns-3-of-12 {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: $screen-xs-min) {
+  #mega-menu-primary {
+    background: $color__mega-menu_bg;
+
+    .mega-menu-item-object-product_cat > .mega-menu-link {
+
+    }
+
+// menu item
+  #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link {
+
+  }
+    // category heading
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
+    //  font-size: 1.5rem !important;
+    //  line-height: 1 !important;
+    //  padding-bottom: 0.1rem !important;
+    //  border-bottom: 2px solid $color__brand-primary !important;
+    //  margin-bottom: 0.3rem !important;
+      }
+
+
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link {
+      //border: 0 !important;
+
+    }
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link {
+      //border: 0 !important;
+      //line-height: 2.3 !important;
+    }
+  }
+}
+
+
+/* ==========================================================================
+   =Breadcrumbs navigation
+   ========================================================================== */
+
+.tyche-breadcrumbs {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #a7a7a7;
+  font-size: 14px;
+  line-height:13px;
+  span {
+    font-size: 14px;
+  }
+  .tyche-breadcrumb-sep {
+    margin-left: 2px;
+    margin-right: 4px;
+  }
+  a {
+    font-size: 1rem;
+    color: #777;
+    &:hover,
+    &:focus {
+      color: $color__brand-primary-hover;
+    }
+  }
+}

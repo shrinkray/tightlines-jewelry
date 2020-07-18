@@ -1,0 +1,45 @@
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: $font__weight_medium;
+  color: $color__title;
+}
+
+
+
+h1 {
+  font-size: 4rem;
+ // line-height: 1rem;
+  font-weight: $font__weight_thin;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 35px;
+}
+
+h5 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 24px;
+}
+.page-title {
+  margin-top: 0;
+  text-transform: uppercase;
+  &.standard{
+    margin-top:2rem;
+  }
+}
