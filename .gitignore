@@ -8,6 +8,7 @@
 *.bak
 *.swp
 Thumbs.db
+.htaccess
 
 # wordpress specific
 temp-write-test-*
@@ -51,6 +52,7 @@ wp-content/mysql.sql
 /index.php
 /license.txt
 /readme.html
+/local-phpinfo.php
 /wp-activate.php
 /wp-app.php
 /wp-atom.php
