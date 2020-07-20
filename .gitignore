@@ -47,6 +47,7 @@ wp-content/mysql.sql
 
 # wp core (as of 4.9.5)
 /db-config.php
+/robots.txt
 /index.php
 /license.txt
 /readme.html
@@ -95,10 +96,11 @@ wp-content/mysql.sql
 /wp-content/plugins/akismet/
 
 
-/wp-content/themes/soss-catalog-theme/node_modules/
-/wp-content/themes/soss-catalog-theme/.babelrc/
-/wp-content/themes/soss-catalog-theme/.bowerrc/
-/wp-content/themes/soss-catalog-theme/dist/
+/wp-content/themes/tightlines-jewelry-theme/node_modules/
+/wp-content/themes/tightlines-jewelry-theme/.babelrc/
+/wp-content/themes/tightlines-jewelry-theme/.bowerrc/
+/wp-content/themes/tightlines-jewelry-themee/dist/
+/wp-content/themes/tightlines-jewelry-themee/package-lock.json
 
 
 
