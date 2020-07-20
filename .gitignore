@@ -104,7 +104,7 @@ wp-content/mysql.sql
 /wp-content/themes/tightlines-jewelry-themee/dist/
 /wp-content/themes/tightlines-jewelry-themee/package-lock.json
 
-
+**/package-lock.json
 
 
 dist
